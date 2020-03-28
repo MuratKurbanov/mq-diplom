@@ -1,3 +1,25 @@
-h1 {
-    color: blue;
-}
+@font-face {
+    font-family: OpenSans;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+  font-family: OpenSans;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  body {
+    display: block;
+    margin: 0;
+    font-family: OpenSans, Arial, san-serif;
+    overflow-x: hidden;
+  }  
+  
+  * {
+    margin: 0; 
+    padding: 0
+  }

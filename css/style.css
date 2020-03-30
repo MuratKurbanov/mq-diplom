@@ -25,7 +25,7 @@
   }
   .header-wrapper {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     color: #ffffff;
   }
   .header-wrapper:after {
@@ -41,7 +41,7 @@
   }
   .wrapper-footer {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     color: #ffffff;
   }
   .wrapper-footer:after {
@@ -63,5 +63,10 @@
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+      }
+      .athlet {
+          background-position: center center;
+          background-size: 100%;
+
       }
 }

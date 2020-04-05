@@ -299,12 +299,11 @@ img {
     height: 100vh;
     background-size: cover;
   }
-  }
   .surface_logo_text {
     width: 140px;
     height: 36px;
   }
-  
+
 }
 @media (min-width: 641px) and (max-width:960px) {
     .header {

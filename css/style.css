@@ -26,7 +26,6 @@
 
   h1 {
     text-transform: uppercase;
-    align-self: flex-start;
   }
   h2 {
     font-size: 2em;
@@ -44,8 +43,8 @@
   }
   h4 span {
     position: relative;
-    font-size: 0.6em;
-    color: #000;
+    font-size: 0.5em;
+    color: #000000;
     vertical-align: top;
     margin-right: 0.8em;
     vertical-align: top;
@@ -58,17 +57,28 @@ h4 span:after {
   width: 100%;
   height: 5px;
   border-radius: 2px;
-  bottom: -5px;
+  bottom: -8px;
   left: 0;
 }
   .header-3 {
     font-size: 1.75em;
     margin-top: 25px;
   }
+  .start-text {
+    margin-top: 135px;
+    margin-left: 20px;
+  }
+  .secondary-strock {
+    margin-top: 30px;
+    margin-left: 45px;
+  }
   .text-footer-button {
     font-size: 0.9em;
     text-transform: uppercase;
     color: #9b8ec1;
+    padding-left: 0;
+    margin: 0;
+
   }
   span{
     text-decoration: none;
@@ -102,13 +112,14 @@ h4 span:after {
     position: absolute;
     top: 0;
     left: 0;
-  }
-  .container {
+}
+.container {
     position: relative;
     z-index: 1;
     color: #ffffff;
-  }
-  .group-of-footer {
+}
+
+.group-of-footer {
     position: relative;
     z-index: 2;
     color: #ffffff;
@@ -116,8 +127,8 @@ h4 span:after {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
-  }
-  .footer {
+}
+.footer {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -126,8 +137,11 @@ h4 span:after {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  }
-  .footer:after {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.footer:after {
     content: "";
     width: 100%;
     height: 100vh;
@@ -136,7 +150,7 @@ h4 span:after {
     position: absolute;
     top: 0;
     left: 0;
-  }
+}
 .content-number-block03 {
   background: #5c42b0;
   color: white;
@@ -155,13 +169,11 @@ h4 span:after {
   bottom: -5px;
   left: 0;
 }
-
   .block-01_1 {
     background-color: #fafafa;
     padding-top: 84px;
     padding-bottom: 60px;
   }
-  
   .block-01_2 {
     background-color: #f5f4f9;
     padding-top: 60px;
@@ -172,12 +184,21 @@ h4 span:after {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .block-01_3 h4 span {
+    color: #000000;
+  }
+  .block-01_3 h4 span:after {
+    background-color: #ffffff;
+  }
+  .block-01_3 p {
+    color: white;
+  }
+
   .block-02_1 {
-    background-color: #e7e7e7;
+    background-color: #fafafa;
     padding-top: 84px;
     padding-bottom: 60px;
   }
-  
   .block-02_2 {
     background-color: #f5f4f9;
     padding-top: 60px;
@@ -188,16 +209,23 @@ h4 span:after {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .block-02_3 h4 span {
+    color: #A297CC;
+  }
+  .block-02_3 h4 span:after {
+    background-color: #ffffff;
+  }
+  .block-02_3 p {
+    color: white;
+}
   .container-3 {
     background-color: #e7e7e7;
     padding-bottom: 82px;
   }
   .group-button {
-    margin-top: 30%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: flex-end;
   }
 .buttons {
   width: calc(100% - 13%);
@@ -216,7 +244,6 @@ h4 span:after {
     justify-content: center;
     flex-wrap: wrap;
     }
-    
 .button-gstore {
     display: flex;
     background: #5c42b0;
@@ -240,52 +267,47 @@ h4 span:after {
     fill: #ffffff;
 }
 .logo {
-    width: 130px;
-    height: 135px;
-    fill: #714bd0;
-    background: linear-gradient(to bottom, #7c58de, #493a8d);
-    border-radius: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  position: relative;
+  background: #5c42b0;
+  background: linear-gradient(to bottom, #7c58de, #493a8d);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 72px;
+  height: 72px;
 }
-.icon-logo-button {
-    width: 56px;
-    height: 56px;
-    fill: white;
+.icon-logo-button:after{
+  width: 56px;
+  height: 56px;
+  fill: white;
+  position: absolute;
+  z-index: 8;
 }
 .surface_logo_text {
-    width: 140px;
-    height: 36px;
     fill: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin: auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 img {
     max-width: 100%;
     }
-
-.icon-logo-button {
-      position: relative;
-      z-index: 3;
-    }
-
-
-
-
 @media (max-width: 640px) {
-    .header-wrapper {
-        width: 100%;
-        height: 100vh;
-        background-size: cover;
-    }
-    
+  header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  }
+  .surface_logo_text {
+    width: 140px;
+    height: 36px;
+  }
+  
 }
-
 @media (min-width: 641px) and (max-width:960px) {
-    .header-wrapper {
+    .header {
         width: 100%;
         height: 100vh;
         background-size: cover;

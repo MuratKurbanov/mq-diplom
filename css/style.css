@@ -774,9 +774,6 @@ img {
     margin-top: -140px;
     margin-bottom: -400px;
   }
-  section .player-wrapper  {
-    margin-top: 100px;
-  }
   .group-button {
       display: flex;
       justify-content: center;
@@ -792,6 +789,11 @@ img {
   .container-3 {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .container-3:nth-child(odd) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
   }
   .container-3 picture {
     width: 50%;
@@ -804,9 +806,17 @@ img {
     width: 50%;
   }
   .content-number-block03 {
+    background: #5c42b0;
+    color: #e7e7e7;
+    font-weight: 700;
     position: absolute;
     z-index: 1;
-    margin-left: 0%;
+  }
+  .content-number-block03 .container-3:after{
+    top: -100%;
+    left: 50%;
+    bottom: 50;
+    margin-right: -50%;
   }
   .block-01_1 {
     padding-top: 30px;

@@ -99,6 +99,11 @@ p {
   text-transform: uppercase;
   color: #c1c1c1;
 }
+.content-header-4-02 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: #c1c1c1;
+}
 .header {
   position: relative;
   width: 100%;
@@ -321,7 +326,7 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 640px), (orientation: landscape) {
+@media (max-width: 640px) and (orientation: landscape) {
 
   
   header {
@@ -365,7 +370,6 @@ img {
     left: 0;
   }
   p {
-      width: 60%;
       line-height: 28px;
       margin-left: 32px;
       padding: 0;
@@ -373,13 +377,13 @@ img {
   h1 {
     font-size: 4em;
   }
-    .first-strock {
+  .first-strock {
       margin-left: 50px;
     }
-    .secondary-strock {
+  .secondary-strock {
       margin-left: 140px;
     }
-    h2 {
+  h2 {
       font-size: 5em;
       margin: 98px auto 0;
     }
@@ -415,6 +419,23 @@ img {
       padding: 0;
       margin-left: 32px;
     }
+    .block-text-01 {
+      width: 40%;
+      margin-left: 53%;
+      padding: 0;
+      justify-content: flex-end;
+    }
+    .block-text-02 {
+      width: 40%;
+      margin-left: 32px;
+      padding: 0;
+      justify-content: flex-start;
+    }
+    .content-header-4-02 {
+      font-size: 2em;
+      padding: 0;
+      margin-left: 32px;
+    }
     .footballer {
       display: flex;
       justify-content: flex-start;
@@ -426,6 +447,9 @@ img {
       justify-content: flex-end;
       margin-top: -140px;
       margin-bottom: -400px;
+    }
+    .content-number-block03 {
+      margin-left: 32px;
     }
     .block-01_1 {
       padding-top: 30px;
@@ -546,7 +570,41 @@ img {
   }
 }
 
-@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px){
+@media (min-width: 961px) {
+  
+  .block-text {
+    font-size: 1.3em;
+    line-height: 28px;
+    margin-left: 10%;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .block-text-01 {
+    width: 40%;
+    font-size: 1.3em;
+    line-height: 28px;
+    margin-left: 53%;
+    justify-content: flex-end;
+  }
+  .block-text-02 {
+    width: 40%;
+    font-size: 1.3em;
+    line-height: 28px;
+    margin-left: 10%;
+    justify-content: flex-start;
+  }
+  .content-header-4 {
+    width: 50%;
+    font-size: 2.3em;
+    padding: 0;
+    margin-left: 53%;
+  }
+  .content-header-4-02 {
+    width: 50%;
+    font-size: 2.3em;
+    padding: 0;
+    margin-left: 10%;
+  }
   h1 {
     font-size: 5.6em;
     margin-top: 150px;
@@ -573,13 +631,28 @@ img {
   }
   h3 {
     font-size: 5em;
-    margin-top: 50px;
-    margin-left: 32px;
+    margin-top: -50px;
+    margin-left: 10%;
     padding: 0;
   }
   .athlets-header {
     margin-left: 45%;
     margin-bottom: -80px;
+  }
+  .header-3 {
+    font-size: 5em;
+    margin-top: 20%;
+    margin-left: 10%;
+  }
+  h4 {
+    width: 60%;
+    font-size: 8em;
+    margin-left: 32px;
+  }
+  .athlets-header {
+    margin-top: 80px;
+    margin-left: 45%;
+    padding-bottom: -80px;
   }
   .header {
     position: relative;
@@ -606,7 +679,6 @@ img {
     flex-direction: column;
     align-items: center;
   }
-  
   .surface_logo_text {
     width: 190px;
     height: 56px;
@@ -644,19 +716,22 @@ img {
   .button-text {
     font-size: 0.8em;
   }
-  
+  .athlets-wrapper {
+    position: relative;
+  }
   .footballer {
     display: flex;
     justify-content: flex-start;
-    margin-left: 390px;
+    margin-left: -160px;
     margin-bottom: -600px;
   }
   .basketballer {
-    display: flex;
     justify-content: flex-end;
     margin-top: -140px;
-    margin-right: 125px;
     margin-bottom: -400px;
+  }
+  section .player-wrapper  {
+    margin-top: 100px;
   }
   .group-button {
     display: flex;
@@ -674,4 +749,79 @@ img {
     margin-right: 38px;    
   }
   
+  .container-3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-3 picture {
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+  .number-03 {
+    width: 50%;
+  }
+  .content-number-block03 {
+    position: absolute;
+    z-index: 1;
+    margin-left: 0%;
+  }
+  .block-01_1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .block-01_2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .block-01_3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .block-01_1  h4 {
+    width: 50%;
+    margin-left: 45%;
+    padding: 0;
+  }
+  .block-01_2  h4 {
+    width: 50%;
+    margin-left: 45%;
+    padding: 0;
+  }
+  .block-01_3  h4 {
+    width: 50%;
+    margin-left: 45%;
+    padding: 0;
+  }
+  .block-01_1 p {
+    width: 50%;
+    margin-left: 45%;
+    padding: 0;
+  }
+  .block-01_2 p {
+    width: 50%;
+    margin-left: 45%;
+    padding: 0;
+  }
+  .block-01_3 p {
+    width: 50%;
+    margin-left: 45%;
+    padding: 0;
+  }
+  .block-02_1 {
+    background-color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-top: -90px;
+  }
+  .block-02_2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .block-02_3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }

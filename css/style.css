@@ -300,7 +300,9 @@ p {
 .logo {
   width: 75px;
   height: 75px;
-  margin: 98px 0 0 0;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(to bottom, #7c58de, #493a8d);
   border-radius: 20px;
   display: flex;
@@ -327,16 +329,33 @@ img {
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
-
-  
+  h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+  }
   header {
     width: 100%;
     height: 100vh;
     background-size: cover;
   }
-  .surface_logo_text {
-    width: 140px;
-    height: 36px;
+  .logo {
+    width: 75px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to bottom, #7c58de, #493a8d);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .group-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .footer-conteiner {
     color: #ffffff;
@@ -345,6 +364,32 @@ img {
     justify-content: center;
     align-items: stretch;    
   }
+  .surface_logo_text {
+    fill: #ffffff;
+  }
+  .logo-footer {
+    width: 140px;
+    height: 36;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .group-button {
+    display: flex;
+    justify-content: center;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  .button-appstore{
+    width: 48%;
+    margin-right: 16px;
+    }
+.button-gstore {
+    width: 48%;
+    margin-left: 16px;
+  } 
 }
 @media (min-width: 641px) and (max-width:960px) {
 
@@ -385,11 +430,11 @@ img {
     }
   h2 {
       font-size: 5em;
-      margin: 98px auto 0;
+      margin: 30px auto 0;
     }
     .text-footer-button {
       font-size: 2.3em;
-      line-height: 60px;
+      line-height: 50px;
       margin: auto;
     }
     h3 {
@@ -510,6 +555,7 @@ img {
     .logo {
       width: 130px;
       height: 136px;
+      margin-top: 40px;
       margin-left: auto;
       margin-right: auto;    
     }
@@ -569,9 +615,7 @@ img {
     height: 36px;
   }
 }
-
 @media (min-width: 961px) {
-  
   .block-text {
     font-size: 1.3em;
     line-height: 28px;
@@ -700,12 +744,12 @@ img {
     justify-content: center;
   }
   .button-appstore{
-    width: 20%;
+    width: 30%;
     margin-right: 16px;
     height: 68px;
     }
   .button-gstore {
-    width: 20%;
+    width: 30%;
     margin-left: 16px;
     height: 68px;
   }
@@ -734,21 +778,17 @@ img {
     margin-top: 100px;
   }
   .group-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer-conteiner {
-    justify-content: stretch;
-  }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   .logo {
     width: 130px;
     height: 136px;
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 0;
     margin-right: 38px;    
   }
-  
   .container-3 {
     display: flex;
     flex-wrap: wrap;

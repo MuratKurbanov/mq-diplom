@@ -42,25 +42,45 @@ h3 {
   padding-right: 20px;
   color: #e7e7e7;
 }
+h3 span {
+  position: relative;
+  font-size: 0.8em;
+  color: #000000;
+  vertical-align: top;
+  margin-right: 0.8em;
+  vertical-align: top;
+  padding-top: calc(1em / 2);
+}
+h3 span:after {
+  position: absolute;
+  background-color: #ffffff;
+  content: "";
+  width: 100%;
+  height: 6px;
+  border-radius: 4px;
+  bottom: -8px;
+  left: 0;
+  z-index: 1;
+}
 h4 {
   padding-left: 20px;
 }
 h4 span {
   position: relative;
-  font-size: 0.5em;
+  font-size: 0.6em;
   color: #000000;
   vertical-align: top;
   margin-right: 0.8em;
   vertical-align: top;
-  padding-top: calc(1em/2);
+  padding-top: calc(1em / 2);
 }
 h4 span:after {
   position: absolute;
   background-color: #5f3cb6;
   content: "";
   width: 100%;
-  height: 5px;
-  border-radius: 2px;
+  height: 6px;
+  border-radius: 4px;
   bottom: -8px;
   left: 0;
 }
@@ -158,14 +178,13 @@ p {
 }
 .content-number-block03 span:after {
   position: relative;
-  background-color: #8f7bc8;
-  color: #e7e7e7;
-  content: "";
-  width: 100%;
-  height: 5px;
-  border-radius: 2px;
-  bottom: -8px;
-  left: 0;
+    background-color: #917bce;
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    bottom: -5px;
+    left: 0;
 }
   .block-01_1 {
     padding-top: 84px;
@@ -246,6 +265,12 @@ p {
     justify-content: center;
     height: 36px;
 }
+.button-appstore:hover {
+  background: #3a1e8b;
+}
+.button-gstore:hover {
+  background: #3a1e8b;
+}
 .button-text {
   font-size: 0.5em;
   text-transform: uppercase;
@@ -307,6 +332,9 @@ p {
   border-radius: 20px;
   display: flex;
   justify-content: center;
+}
+.logo:hover {
+  background: linear-gradient(to bottom, #663bdd, #3a1e8b);
 }
 .icon--button{
   width: 56px;
@@ -620,7 +648,7 @@ img {
     width: 80%;
     font-size: 1.3em;
     line-height: 28px;
-    margin-left: 10%;
+    margin-left: 20%;
     padding: 0;
     justify-content: flex-start;
   }
@@ -676,18 +704,35 @@ img {
   }
   h3 {
     font-size: 5em;
-    margin-top: -50px;
+    margin-top: 50px;
     margin-left: 10%;
     padding: 0;
   }
   .athlets-header {
     margin-left: 45%;
-    margin-bottom: -80px;
+    margin-bottom: 50px;
   }
+  .athlets-wrapper {
+    position: relative;
+  }
+  .players-wrappet {
+    position: relative;
+  }
+  .footballer {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -150px;
+    margin-bottom: -500px;
+  }
+  .basketballer {
+    justify-content: flex-end;
+    margin-bottom: -400px;
+  }
+  
   .header-3 {
     font-size: 5em;
     margin-top: 20%;
-    margin-left: 10%;
+    margin-left: 20%;
   }
   h4 {
     width: 60%;
@@ -761,20 +806,6 @@ img {
   .button-text {
     font-size: 0.8em;
   }
-  .athlets-wrapper {
-    position: relative;
-  }
-  .footballer {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: -160px;
-    margin-bottom: -600px;
-  }
-  .basketballer {
-    justify-content: flex-end;
-    margin-top: -140px;
-    margin-bottom: -400px;
-  }
   .group-button {
       display: flex;
       justify-content: center;
@@ -803,25 +834,31 @@ img {
     width: 50%;
   }
   .content-number-block03 {
+    font-size: 1.5em;
+    line-height: 5.5em;
+    text-align: center;
+    width: 5.5em;
+    height: 5.5em;
     background: #5c42b0;
     color: #e7e7e7;
     font-weight: 700;
     position: absolute;
     z-index: 1;
-    margin-left: calc(-5.4 * 14px / 2);
-    margin-top: 13em;
+    margin-left: calc(-5.5 * 36px / 2);
+    margin-top: 8em;
   }
+
   .block-01_1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
   .block-01_2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
   .block-01_3 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
   .block-01_1  h4 {
     width: 50%;
@@ -855,16 +892,16 @@ img {
   }
   .block-02_1 {
     background-color: #ffffff;
-    padding-top: 0px;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     margin-top: -90px;
   }
   .block-02_2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
   .block-02_3 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }

@@ -817,6 +817,15 @@ img {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
   }
+  .content-number-block03:nth-child(odd) {
+    right: calc(90% / 2);
+    left: auto;
+  }
+  h3 .header-3 .header-3:nth-child(odd) {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 50%;
+  }
   .container-3 picture {
     width: 50%;
   }

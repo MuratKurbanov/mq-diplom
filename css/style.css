@@ -723,6 +723,7 @@ img {
     font-size: 5em;
     margin-top: 20%;
     margin-left: 20%;
+    margin-right: 20%;
   }
   h4 {
     width: 60%;
@@ -820,11 +821,6 @@ img {
   .content-number-block03:nth-child(odd) {
     right: calc(90% / 2);
     left: auto;
-  }
-  h3 .header-3 .header-3:nth-child(odd) {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 50%;
   }
   .container-3 picture {
     width: 50%;
